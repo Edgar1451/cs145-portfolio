@@ -27,8 +27,12 @@ class MyPortfolio {
      * the screen on one line.
      */	
 	static void printIntegerList(int[] values) {
-        for (int i = 400, i>1; i--);
-            
+        for (int i = 0; i< values.length; i++); {
+            System.out.print(values[i]);
+        
+
+        }
+
 
 
 	}
@@ -39,7 +43,9 @@ class MyPortfolio {
      * ORDER to the screen on one line.
      */	
 	static void printIntegerListReversed(int[] values) {
-
+        for (int i = values.length; i > 0; i--);{
+            System.out.print(values[i]);
+        }
 	}
 
     /**
@@ -47,7 +53,8 @@ class MyPortfolio {
      * and returns the "new" left_char.
       */	
 	static char swapLeftWithRight(char left_char, char right_char) {
-		return ' ';
+        
+		return '';
 	}
 
     /**
