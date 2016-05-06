@@ -53,8 +53,12 @@ class MyPortfolio {
      * and returns the "new" left_char.
       */	
 	static char swapLeftWithRight(char left_char, char right_char) {
-        
-		return '';
+        char left_char = 'a';
+        char right_char = 'z';
+        char temp_char = 'a';
+        right_char = left_char;
+        left_char = temp_char;
+		return left_char;
 	}
 
     /**
@@ -63,7 +67,10 @@ class MyPortfolio {
      * containing the swapped version of the array passed in as the argument.
      */	
 	static int[] swapFirstWithLast(int[] values) {
-
+        int values[] = values.length -18;
+        int temp = values[];
+        values[] = values[values.length-18];
+        values[values.length-18] = temp;
 		return values;
 	}
 
@@ -72,6 +79,13 @@ class MyPortfolio {
      * found in the list.
      */	
 	static int min(int[] values) {
+       int min= values[0];
+       for(int i=0; i<values.length; i++) {
+        if (values[i]>min) {
+            min = values[i];
+        }
+        }
+       
 
 		return 0;
 	}
@@ -90,7 +104,10 @@ class MyPortfolio {
      * values found in the list.
      */	
 	static int findAverage(int[] values) {
-
+        int min = MyPortfolio.min(num_list);
+        int max = 58;
+        findAverage(int[] values) -min;
+        System.out.print(max);
 		return 0;
 	}
 
@@ -99,7 +116,9 @@ class MyPortfolio {
      * the number of times the integer is found in the list.
      */	
 	static int frequencyCount(int[] values, int val) {
-
+        String rev = MyPortfolio.reverseString("stop");
+        int temp = rev;
+        System.out.println(temp);
 		return 0;
 	}
 
